@@ -1,0 +1,261 @@
+/* Showcase */
+.showcase {
+	height: 600px;
+	margin-top: 200px;
+    background-image: url("../assets/Back.svg");
+    background-position: bottom;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+.showcase h1 {
+	font-size: 40px;
+	position: center;
+	text-align: center;
+}
+
+.showcase p {
+	margin: 20px 0;
+	text-align: center;
+}
+
+.showcase .flex {
+	overflow: visible;
+	justify-content: center;
+}
+
+/* Panels */
+.features-background {
+	background: #23272A; 
+	padding-top: 100px; 
+	padding-bottom: 1px;
+}
+
+.features-back {
+	background-image: url("../assets/Back2.svg");
+    background-position: bottom;
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+.features-back2 {
+	background-image: url("../assets/Back2Color.svg");
+    background-position: bottom;
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+.features-back3 {
+	background-image: url("../assets/back.svg");
+    background-position: bottom;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+.features {
+	margin: 110px auto;
+}
+
+.class-title::after{
+	content: '';
+	display: flex;
+	width: 15%;
+	height: 2px;
+	background-color: var(--red);
+	margin-top: 1%;
+}
+
+.features h3 {
+	text-align: center;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+.features p {
+	text-align: center;
+}
+
+.features img {
+	box-shadow: 0px 5px 15px #2b2e30,
+	inset 0px 0px 15px #2b2e30;
+	border-radius: 5px;
+	justify-self: center;
+}
+
+/* STATISTICS */
+.statistics-icon {
+    color: rgb(63, 66, 68);
+	position: relative;
+	font-size: 100px;
+    font-weight: 200;
+	cursor: pointer;
+}
+
+.statistics {
+    background: #23272A;
+    box-shadow: 0px 0px 15px #23272A;
+}
+
+.statistics-count {
+    font-size: 24px;
+}
+
+.statistiscs-num {
+    color: #fa6d6d;
+}
+
+.statistiscs-title {
+    color: #adadad;
+}
+
+/* Partners */
+
+.partner-title {
+	font-size: 19px;
+	position: relative;
+	top: 11.5px;
+}
+
+.tag-partner {
+	cursor: pointer;
+	background-color: #2b2e30;
+	font-size: 15px;
+	border-radius: 4px;
+	color: #b6b6b6;
+	position: relative;
+	top: 2px;
+}
+
+.partner-card{
+    background-color: rgb(38, 39, 41);
+    border-radius: 7px;
+    transition: 0.2s all;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    margin: 10px;
+    width: auto;
+}
+
+.partner-card:hover{
+    transform: translateY(-5px);
+    transition: 0.2s all;
+}
+
+.card-footer{
+	background-color: transparent;
+    border: none;
+} 
+
+.partner-banner{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    display: block;
+    position: relative;
+    height: 135px;
+    object-fit: fill;
+    -webkit-user-drag: none;
+}
+
+.partner-description{
+	overflow: auto;
+	height: 130px !important;
+    color: #b0b4c7;
+}
+
+.verified-badge{
+	cursor: pointer;
+    position: relative;
+    bottom: .1rem;
+}
+
+/* IMAGE */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile */
+.mobile {
+	display: none;
+	visibility: hidden;
+}
+
+/* Tablet Responsive */
+@media (max-width: 768px) {
+	.features img {
+		width: 100%;
+	}
+
+	.desktop {
+		display: none;
+		visibility: hidden;	
+	}
+
+	.mobile {
+		display: block;
+		visibility: visible;	
+	}
+}
+
+@media (max-width: 450px) {
+	.showcase {
+		margin-top: 30px;
+		height: 450px;
+	}
+
+	.showcase .buttons {
+		flex-direction: column;
+	}
+
+	.showcase h1 {
+		font-size: 25px;
+	}
+
+	.showcase p {
+		font-size: 14px;
+	}
+
+	.features {
+		margin: 90px auto;
+	}
+
+	.showcase a {
+		width: 100%;
+		text-align: center;
+	}
+
+	.features .grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.desktop {
+		display: none;
+		visibility: hidden;	
+	}
+
+	.mobile {
+		display: block;
+		visibility: visible;	
+	}
+}
+
+.form-control {
+    height: auto;
+    border: unset;
+	margin-left: -11px !important;
+    font-size: 15px;
+    padding: 8px 10px;
+    letter-spacing: 1px;
+    height: calc(1.4em + 1.4rem + 2px);
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+}
+
+.textlimit {
+	display: block;
+	width: 30em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

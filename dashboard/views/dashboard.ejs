@@ -1,0 +1,49 @@
+<%- include("partials/header", { bot, user, path, title: "RedFenix" }) %>
+
+  <!-- ServerList -->
+  <div class="container" style="max-width: 1140px; margin-bottom: 300px; margin-top: 60px;">
+    <h1 class="display-5 title" style="color: var(--light-red); text-align: center;">Selecciona un Servidor</h1>
+    <p class="subtitle" style="color: white; text-align: center; margin-bottom: 50px;">Selecciona el servidor que
+      quieres administrar o invita a RedFenix a su servidor.</p>
+
+    <hr>
+    <div class="input-group mb-4 flex">
+      <div class="input-group-prepend">
+        <a class="button btn-search" style="padding: 0.99rem;"><i class="fas fa-search"></i>
+        </a>
+      </div>
+      <input oninput="search(this.value)" class="form-control" placeholder="Busca tu Servidor ...">
+    </div>
+
+    <% for (const i in Guild) { %>
+
+      <div class="card mt-2" id="<%- Guild[i].Id %>">
+        <div class="card-body" style="padding: 0px !important;">
+          <div class="float-left mt-1">
+            <%- Guild[i].Icon ? `<img src="https://cdn.discordapp.com/icons/${Guild[i].Id}/${Guild[i].Icon}"
+              class="d-inline-block align-middle rounded-circle" width="40px" oncontextmenu="return false"
+              draggable="false">` : `<img src="/assets/RedFenix.png" class="d-inline-block align-middle rounded-circle"
+                width="40px" oncontextmenu="return false" draggable="false">` %>
+              &nbsp;
+              <h5 class="d-inline-block align-middle mb-0 textlimit">
+                <%= Guild[i].Name %>
+              </h5>
+          </div>
+          <% if (Guild[i].Bot) { %>
+            <a href="/dashboard/<%- Guild[i].Id %>">
+              <button class="button float-right btn mt-1 mb-0" style="background-color: tomato;">Manejar</button>
+            </a>
+
+            <% } else { %>
+              <a href="<%- Guild[i].Invite %>">
+                <button class="button float-right btn mt-1 mb-0" style="background-color: #7289da;">Invitar</button>
+              </a>
+              <% } %>
+        </div>
+      </div>
+      <% }; %>
+  </div>
+
+  <input id="servers" value="[<%= Guilds %>]" hidden="">
+
+  <%- include("partials/footer") %>

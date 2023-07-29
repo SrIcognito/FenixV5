@@ -1,0 +1,220 @@
+<%- include("partials/header", { bot, user, path, title: "RedFenix" }) %>
+
+  <!-- Showcase -->
+  <div class="showcase">
+    <div class="container full flex">
+      <div class="showcase-text">
+        <h1><b>¡Es Hora de Añadirme a Tu Servidor!</b></h1>
+        <p>Modera tu Servidor con un Sistema Dinamico Multi-Lenguaje junto con una Diversion unica junto con tus
+          amigos.</p>
+        <div class="buttons flex">
+          <a class="button btn btn-discord"
+            onclick="newPage('https://discord.com/oauth2/authorize?client_id=868222990054228068&permissions=1542844022&scope=bot%20applications.commands');"
+            target="_blank"><span><i class="fab fa-discord"></i>Añadir a Discord</span></a>
+          <a class="button btn" onclick="newPage('https://discord.gg/PUweWWYF9n');" target="_blank"><span><i
+                class="fas fa-headset"></i>Servidor de Soporte</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Features -->
+  <div class="features-background features-back">
+    <center>
+      <h1 class="fw-bolder class-title">CARACTERISTICAS</h1>
+    </center>
+    <div class='features' id='features'>
+      <div class='container grid'>
+        <div>
+          <h3 style="color: #f75e5e;"><b>Entretenimiento</b></h3>
+          <p>Diviertete con mas de 15 comandos entre los cuales encontraras algunos de Generacion de Imagenes, Roleplay,
+            Memes entre muchas cosas mas. Diviertete sin limites junto con el sentido comun y obviamente tus amigos!</p>
+        </div>
+        <img class='Image-Animation' style="cursor: pointer; width: 400px; height: 400px;"
+          src='assets/Entertainment.png'>
+      </div>
+    </div>
+
+    <div class='features'>
+      <div class='container grid'>
+        <img class='Image-Animation desktop' style="cursor: pointer; width: 400px; height: 400px;"
+          src='assets/MultiLanguage.png'>
+        <div>
+          <h3 style="color: #f75e5e;"><b>Multi-Lenguaje</b></h3>
+          <p>Para satisfacer a las diversas comunidades RedFenix tiene por ahora dos idiomas intercambiables como el
+            <b>Ingles</b> y el <b>Español</b> pero algo está claro, estos no serán los únicos lenguajes que soportara
+            RedFenix.
+          </p>
+        </div>
+        <img class='Image-Animation mobile' style="cursor: pointer; width: 400px; height: 400px;"
+          src='assets/MultiLanguage.png'>
+      </div>
+    </div>
+
+    <div class='features' style="margin-bottom: 150px;">
+      <div class='container grid'>
+        <div>
+          <h3 style="color: #f75e5e;"><b>Moderacion</b></h3>
+          <p>Modera con limites junto con unos comandos muy dinamicos y faciles de usar! Puedes desde banear a un
+            Miembro hasta Advertir al mismo e incluso Bloquear Canales, pero no te preocupes si Sancionaste erroneamente
+            puedes quitar esa Sancion, solo que ganaras un odio no deseado.</p>
+        </div>
+        <img class='Image-Animation' style="cursor: pointer; width: 400px; height: 400px;" src='assets/Moderation.png'>
+      </div>
+    </div>
+  </div>
+
+  <!-- Statistics -->
+  <div class="features-background features-back2" style="background-color: rgb(44, 47, 51); padding-top: 0px;">
+    <div style="margin-bottom: 100px;">
+      <center>
+        <h2 class="fw-bolder class-title" style="margin-bottom: 65px; margin-top: 30px;">ESTADISTICAS</h1>
+          <div class="card w-75 mt-4 p-2 statistics" style="margin-bottom: 190px">
+            <div class="row">
+              <div class="col-md-4 my-3">
+                <div class="Grow2-Animation" style="cursor: pointer;">
+                  <i class="fas fa-server statistics-icon Grow2-Animation"></i>
+                  <span class="statistiscs-num d-block mt-3 count-num fw-bold" id="Server">
+                    <%= bot.guilds.cache.size %>
+                  </span>
+                  <span class="statistiscs-title">Servidores Totales</span>
+                </div>
+              </div>
+              <div class="col-md-4 my-3">
+                <div class="Grow2-Animation" style="cursor: pointer;">
+                  <i class="fas fa-users statistics-icon Grow2-Animation"></i>
+                  <span class="statistiscs-num d-block mt-3 count-num fw-bold" id="User">
+                    <%= bot.users.cache.size %>
+                  </span>
+                  <span class="statistiscs-title">Usuarios Totales</span>
+                </div>
+              </div>
+              <div class="col-md-4 my-3">
+                <div class="Grow2-Animation" style="cursor: pointer;">
+                  <i class="fas fa-hashtag statistics-icon Grow2-Animation"></i>
+                  <span class="statistiscs-num d-block mt-3 count-num fw-bold" id="Channel">
+                    <%= bot.channels.cache.size %>
+                  </span>
+                  <span class="statistiscs-title">Canales Totales</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      </center>
+    </div>
+  </div>
+
+  <!-- Partners -->
+  <div class="features-background features-back" style="background-size: 125% !important;">
+    <div class="container" style="margin-bottom: 100px;">
+      <center>
+        <h2 class="fw-bolder class-title">SOCIOS</h1>
+      </center>
+      <div class="row mt-5">
+        <div class="col-md-3 my-2">
+          <div class="partner-card">
+            <img class="w-full img-fluid partner-banner"
+              src="https://cdn.discordapp.com/attachments/909204682919006308/911336878765117500/1636281565731.png"
+              alt="Team BotList">
+            <div class="card-body mt-2">
+              <img class="rounded d-inline-block"
+                src="https://cdn.discordapp.com/icons/903629689766170635/2f4e031812a611abcba0892c1ca945eb.png?size=4096"
+                width="60px">
+              <h6 class="partner-title d-inline-block">Team BotList <img id="Partner" class="verified-badge"
+                  src="https://cdn.discordapp.com/emojis/858344375042310214.png?v=1" width="23px" height="auto"><br>
+                <span class="tag-partner p-1" id="DiscordBotList">BotList</span>
+                <span class="tag-partner p-1" id="DiscordServer">Servidor</span>
+              </h6>
+              <p class="text-start mt-4 partner-description"> Team BotList se ha creado para que encuentres tu bot
+                o servidor ideal. Con nosotros no tendras limites, encuentra nuevas comunidades.</p>
+            </div>
+            <div class="card-footer p-3 buttons flex">
+              <button class="button btn w-100" style="background-color: #7289da;"
+                onclick="newPage('https://discord.gg/wX5jU32ys2');" target="_blank"><span>
+                  <i class="fab fa-discord"></i>Servidor de Discord</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-2">
+          <div class="partner-card">
+            <img class="w-full img-fluid partner-banner"
+              src="https://cdn.discordapp.com/attachments/909204682919006308/914207401308205066/DragonBot.gif"
+              alt="Dragon">
+            <div class="card-body mt-2">
+              <img class="rounded d-inline-block"
+                src="https://cdn.discordapp.com/icons/876824130580799488/3f60a3c03976ee53167450f5c9e75acb.png?size=4096"
+                width="60px">
+              <h6 class="partner-title d-inline-block">Dragon <img id="Partner" class="verified-badge"
+                  src="https://cdn.discordapp.com/emojis/858344375042310214.png?v=1" width="23px" height="auto"><br>
+                <span class="tag-partner p-1" id="DiscordBot">Discord Bot</span>
+                <span class="tag-partner p-1" id="DiscordServer">Servidor</span>
+              </h6>
+              <p class="text-start mt-4 partner-description"> Dragon está dedicado para anti spam, moderación, diversión
+                y mucho más. Pero es no lo es todo, contamos con otro Discord Bot que te puede ayudar a mejorar tu
+                servidor.</p>
+            </div>
+            <div class="card-footer p-3 buttons flex">
+              <a class="button btn w-100" style="background-color: #7289da;"
+                onclick="newPage('https://discord.gg/ZhcquKJx');" target="_blank"><span>
+                  <i class="fab fa-discord"></i>Servidor de Discord</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-2">
+          <div class="partner-card">
+            <img class="w-full img-fluid partner-banner"
+              src="https://i.pinimg.com/originals/d0/a3/c3/d0a3c3ffade9804fad4075b13323d31d.png" alt="Eternity">
+            <div class="card-body mt-2">
+              <img class="rounded d-inline-block"
+                src="https://cdn.discordapp.com/icons/896639829415178240/f14ab7a63eaf0c302ac31cafae536ff1.png?size=4096"
+                width="60px">
+              <h6 class="partner-title d-inline-block">Eternity <img id="Partner" class="verified-badge"
+                  src="https://cdn.discordapp.com/emojis/858344375042310214.png?v=1" width="23px" height="auto"><br>
+                <span class="tag-partner p-1" id="Comunity">Comunidad</span>
+                <span class="tag-partner p-1" id="DiscordServer">Servidor</span>
+              </h6>
+              <p class="text-start mt-4 partner-description"> Eternity es una Comunidad de programadores, aprendices e
+                incluso una Comunidad para divertirte y aprender ademas contamos con 2 Discord Bots publicos, no esperes
+                mas el conocimiento y en cambio siguelo!
+              </p>
+            </div>
+            <div class="card-footer p-3 buttons flex">
+              <a class="button btn w-100" style="background-color: #7289da;"
+                onclick="newPage('https://discord.gg/5g9XvJsMST');" target="_blank"><span>
+                  <i class="fab fa-discord"></i>Servidor de Discord</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-2">
+          <div class="partner-card">
+            <img class="w-full img-fluid partner-banner"
+              src="https://cdn.discordapp.com/attachments/909204682919006308/919013448409579551/Sin_titulo-11.png"
+              alt="Switch">
+            <div class="card-body mt-2">
+              <img class="rounded d-inline-block"
+                src="https://cdn.discordapp.com/icons/903720993254694973/bc882c14e1c61c26b209907ce802395c.png?size=4096"
+                width="60px">
+              <h6 class="partner-title d-inline-block">Switch <img id="Partner" class="verified-badge"
+                  src="https://cdn.discordapp.com/emojis/858344375042310214.png?v=1" width="23px" height="auto"><br>
+                <span class="tag-partner p-1" id="DiscordBot">Discord Bot</span>
+                <span class="tag-partner p-1" id="DiscordServer">Servidor</span>
+              </h6>
+              <p class="text-start mt-4 partner-description"> Switch, Un bot de seguridad y proteccion para tu servidor
+                que te ayudara a tener tu servidor de la mejor forma posible, nuestro soporte esta listo para ayudarte
+                cuando lo desees.
+              </p>
+            </div>
+            <div class="card-footer p-3 buttons flex">
+              <a class="button btn w-100" style="background-color: #7289da;"
+                onclick="newPage('https://discord.gg/8MWGZdGuM2');" target="_blank"><span>
+                  <i class="fab fa-discord"></i>Servidor de Discord</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br>
+
+  <%- include("partials/footer") %>

@@ -1,0 +1,184 @@
+{
+	"translations": {
+		"es-ES": "Spanish",
+		"en-US": "English"
+	},
+	"client": {
+		"ISO": {
+			"en-US": "en"
+		},
+		"buttons": {
+			"page": "Web page!",
+			"invite": "Invite me!",
+			"support": "Support Server!",
+			"vote": "Vote for me!"
+		},
+		"collector": {
+			"error": {
+				"time": {
+					"title": "Oops! Time's up!",
+					"description": "The menu of the command you executed has expired, I recommend you to execute the command again."
+				},
+				"you_not_are_the_author": {
+					"title": "Oops! This menu is not yours!",
+					"description": "Since you are not the one who executed the command you cannot use this menu."
+				}
+			}
+		},
+		"mention": {
+			"title": "Hey! Are you lost with me?",
+			"description": "Use the `/help` command to find out about me. Have fun Following the Cube. <:TheCube:924448574673158175>\nIf you found any bugs use `/report` that way you support me a lot. 😘"
+		},
+		"help": {
+			"title": "💡| Welcome to my Help Panel!",
+			"description": "Hey **{{member}}**! I'm {{client}}, a MultiLanguage Bot that will help you in any way possible and I remind you **Follow the Cube** ...",
+			"about_me": {
+				"title": "<:TheCubeTeam:924763912992329821> **`|`** __About me!__",
+				"description": "<:ArrowTwo:932773827732189214> **Use SlashCommands:** `/`\n<:ArrowTwo:932773827732189214> **List of Commands:** `/commands`\n<:ArrowTwo:932773827732189214> * *My Commands:** `{{commands}}`"
+			},
+			"report": {
+				"title": "<:Error:932842948457037884> **`|`** __Any problem or error?__",
+				"description": "Find support or report the bug directly to my developers on their [Discord](https://discord.gg/PUweWWYF9n) server."
+			},
+			"banner": "https://cdn.discordapp.com/attachments/909204682919006308/932746204423553025/Principal-English.gif"
+		},
+		"commands": {
+			"title": "Welcome to my Command List!",
+			"description": "Welcome @ **{{member}}**, remember that if you don't understand the function of each command you can use `/wiki [Command]`. Example: `/wiki timeout` ...",
+			"banner": "https://cdn.discordapp.com/attachments/909204682919006308/933123727879720970/Commands-English.gif",
+			"category": {
+				"select_category": {
+					"title": "<:Box:933148592292646923> **My Categories**"
+				},
+				"select_option": {
+					"description": "Click to see commands for {{category}}."
+				},
+				"select_menu": {
+					"description": "Click to see my Categories."
+				},
+				"list": {
+					"home": "Home",
+					"remove": "Remove",
+					"configuration": "Configuration",
+					"information": "Information",
+					"tools": "Tools"
+				},
+				"list_commands_category": {
+					"title": "List of Commands for {{category}}",
+					"description": "Welcome to the **{{category}}** Command List. Remember that if you find any bugs you can report them with **`/report`**!",
+					"title_category": "<a:Arrow:933834822739193897> **{{category}} commands**"
+				}
+			},
+			"maintenance_commands": "<:Maintenance:934631606025609266> **Commands in maintenance!**",
+			"new_commands": "<a:zap:933837122203418765> **New commands added!**",
+			"extra_fact": {
+				"title": "<:Config:900059170856902726> **Command Syntax**",
+				"description": "**```ml\n() - Sub-Command | [] - Required | <> - Optional```**"
+			},
+			"categories": {
+				"information": "client.commands.categories.information"
+			}
+		},
+		"invite": {
+			"title": "Hey! I'm Cubed, thanks for wanting to invite me!",
+			"description": "> By inviting me you not only help me grow, you also make my creator happy.\n> **Don't forget to follow the Cube!**"
+		},
+		"wikipedia": {
+			"title": "<:List:933114904934760519> **Command Wikipedia:** `{{command}}`",
+			"name": "> <:File:933148592489779200> **Name:** `{{command}}`",
+			"category": "> <:Box:933148592292646923> **Category: ** `{{category}}`",
+			"description": "> <:Text:933148645623214120> **Description:** `{{description}}`",
+			"use": "> <:Question:933115021435756545> **Use:** `/{{use}}`",
+			"footer": "Wikipedia help requested by: {{member}}",
+			"error": {
+				"title": "Oops! This command does not exist!",
+				"description": "The command **`{{command}}`** does not exist or you misspelled it."
+			}
+		},
+		"ping": {
+			"title": "Latency Result...",
+			"messages": "Messages",
+			"database": "Database",
+			"websocket": "WebSocket"
+		},
+		"legal": {
+			"privacy": {
+				"point_one": {
+					"title": "<:TheCubeTeam:924763912992329821> **__Privacy Policy__**",
+					"description": ">>> The purpose of Cubed is not just to have fun or entertain you, Cubed seeks to take your community to the next level through the information collected throughout its use, for this reason we present a list of things that we want to clarify, in this way we seek that you feel comfortable with the information that is collected through Cubed, remember that once Cubed is inside the server, the Privacy Policy will take effect."
+				},
+				"point_two": {
+					"title": "<a:Arrow:933834822739193897> **Stored Data**",
+					"description": ">>> Some of the commands, when executed, require certain information. Therefore, the User must provide the information required for Cubed to continue with the execution of said command, for this Cubed would obtain the information from the Server such as: **Server Name**, **Server Id**, **Channel Id**, and also Cubed may obtain the following information: **Server Owner**, **Server Owner Id**, **Member IDs**."
+				},
+				"point_three": {
+					"title": "<a:Arrow:933834822739193897> **Message Content**",
+					"description": ">>> Cubed does not store messages in its **Database** or other external site, instead Cubed will be able to access the content of the message and due to this, it is possible to Moderate your server like this Please note that Cubed only caches **Deleted Messages** and **Edited Messages** for 1 hour."
+				},
+				"point_four": {
+					"title": "",
+					"description": ""
+				}
+			}
+		}
+	},
+	"command_execute": {
+		"maintenance": {
+			"bot": {
+				"title": "Oops! I'm in Maintenance!",
+				"description": "I am currently in **Maintenance**, this command and all my functions are disabled.\nTry using <t:{{timestamp}}:F> again."
+			},
+			"command": {
+				"title": "Oops! Command in Maintenance!",
+				"description": "Currently the command **{{command}}** is in **Maintenance**.\nPlease try running the command again on <t:{{timestamp}}:F>."
+			}
+		},
+		"dev": {
+			"title": "Oops! Command forbidden!",
+			"description": "Only my developer can use this command, not you..."
+		},
+		"blacklisted": {
+			"title": "Oops! You've been a bad boy!",
+			"description": "You are currently blacklisted, if this is a mistake contact my [Developer](https://discord.com/users/417042588969992203)!"
+		},
+		"premium": {
+			"title": "Oops! Command forbidden!",
+			"description": "This command can only be used by **Premium Users**, join my [Server](https://discord.gg/VErwgMgXZx) for luck getting it!"
+		},
+		"permission": {
+			"bot": {
+				"title": "Oops! I have insufficient permissions!",
+				"description_one": "I require the following permission `{{permissions}}` to run the command!",
+				"description_two": "I require the following permissions `{{permissions}}` to run the command!"
+			},
+			"author": {
+				"title": "Oops! You have insufficient permissions!",
+				"description_one": "You require the following permission `{{permissions}}` to run the command!",
+				"description_two": "You require the following permissions `{{permissions}}` to run the command!"
+			}
+		},
+		"cooldown": {
+			"title": "Oops! This command is boiling!",
+			"description": "Calm down speedster! Please wait {{timestamp}} to rerun the command!"
+		}
+	},
+	"command": {
+		"setlanguage": {
+			"language_error": {
+				"title": "Oops! That language is already selected!",
+				"description": "The language **`{{language}}`** has already been set before."
+			},
+			"language_success": {
+				"title": "The language has been updated!",
+				"description": "The language **`{{language}}`** has been set."
+			}
+		},
+		"screenshot": {
+			"footer": "Screenshot requested by: {{member}}",
+			"error": {
+				"title": "Oops! Invalid url!",
+				"description": "The Url you provided is invalid or you misspelled it!"
+			}
+		}
+	}
+}

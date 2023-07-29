@@ -1,0 +1,181 @@
+{
+	"traslations": {
+		"es-ES": "Español",
+		"en-US": "Ingles"
+	},
+	"client": {
+		"ISO": {
+			"es-ES": "es"
+		},
+		"buttons": {
+			"page": "¡Pagina Web!",
+			"invite": "¡Invitame!",
+			"support": "¡Servidor de Soporte!",
+			"vote": "¡Vota por mi!"
+		},
+		"collector": {
+			"error": {
+				"time": {
+					"title": "Oops! Se ha acabado el tiempo!",
+					"description": "El menu del comando que ejecutaste ha caducado, te recomiendo volver a ejecutar el comando."
+				},
+				"you_not_are_the_author": {
+					"title": "Oops! Este menu no es tuyo!",
+					"description": "Debido a que tu no eres el que ejecuto el comando no puedes usar este menu."
+				}
+			}
+		},
+		"mention": {
+			"title": "Hey! ¿Estas perdido conmigo?",
+			"description": "Usa el comando `/help` para saber sobre mi. Diviertete Siguiendo al Cubo. <:TheCube:924448574673158175>\nSi has encontrado algun error usa `/report` de esa forma me apoyas muchisimo. 😘"
+		},
+		"help": {
+			"title": "💡| Bienvenid@ a mi Panel de Ayuda!",
+			"description": "Hey **{{member}}**! Soy {{client}}, un Bot MultiLenguaje que te ayudara en todo lo posible y te recuerdo **Sigue al Cubo** ...",
+			"about_me": {
+				"title": "<:TheCubeTeam:924763912992329821> **`|`** __Sobre mi!__",
+				"description": "<:ArrowTwo:932773827732189214> **Uso SlashCommands:** `/`\n<:ArrowTwo:932773827732189214> **Lista de Comandos:** `/commands`\n<:ArrowTwo:932773827732189214> **Mis Comandos:** `{{commands}}`"
+			},
+			"report": {
+				"title": "<:Error:932842948457037884> **`|`** __¿Algun problema u error?__",
+				"description": "Encuentre soporte técnico o informe el error directamente a mis desarrolladores en su servidor de [Discord](https://discord.gg/PUweWWYF9n)."
+			},
+			"banner": "https://cdn.discordapp.com/attachments/909204682919006308/932783857219031091/Principal-Espanol.gif"
+		},
+		"commands": {
+			"title": "Bienvenid@ a mi Lista de Comandos!",
+			"description": "Bienvenid@ **{{member}}**, recuerda que si no entiendes la función de cada comando puedes usar `/wiki [Comando]`. Ejemplo: `/wiki timeout` ...",
+			"banner": "https://cdn.discordapp.com/attachments/909204682919006308/933123814500483092/Comandos-Espanol.gif",
+			"category": {
+				"select_category": {
+					"title": "<:Box:933148592292646923> **Mis Categorias**"
+				},
+				"select_option": {
+					"description": "Click para ver los comandos de {{category}}."
+				},
+				"select_menu": {
+					"description": "Click para ver mis Categorias."
+				},
+				"list": {
+					"home": "Hogar",
+					"remove": "Remover",
+					"configuration": "Configuracion",
+					"information": "Informacion",
+					"tools": "Herramientas"
+				},
+				"list_commands_category": {
+					"title": "Lista de Comandos de {{category}}",
+					"description": "Bienvenido a la Lista de Comandos de **{{category}}**. Recuerda que si encuentras algun error puedes reportarlo con **`/report`**!",
+					"title_category": "<a:Arrow:933834822739193897> **Comandos de {{category}}**"
+				}
+			},
+			"maintenance_commands": "<:Maintenance:934631606025609266> **Comandos en mantenimiento!**",
+			"new_commands": "<a:zap:933837122203418765> **¡Nuevos comandos agregados!**",
+			"extra_fact": {
+				"title": "<:Config:900059170856902726> **Sintaxis de los Comandos**",
+				"description": "**```ml\n() - Sub-Comando | [] - Requerido | <> - Opcional```**"
+			}
+		},
+		"invite": {
+			"title": "Hey! Soy Cubed, gracias por querer invitarme!",
+			"description": "> Al invitarme no solo me ayudas a crecer, tambien haces feliz a mi creador.\n> **No te olvides de seguir al Cubo!**"
+		},
+		"wikipedia": {
+			"title": "<:List:933114904934760519> **Wikipedia del Comando:** `{{command}}`",
+			"name": "> <:File:933148592489779200> **Nombre:** `{{command}}`",
+			"category": "> <:Box:933148592292646923> **Categoría: ** `{{category}}`",
+			"description": "> <:Text:933148645623214120> **Descripción:** `{{description}}`",
+			"use": "> <:Question:933115021435756545> **Uso:** `/{{use}}`",
+			"footer": "Ayuda de la Wikipedia pedida por: {{member}}",
+			"error": {
+				"title": "Oops! Este comando no existe!",
+				"description": "El comando **`{{command}}`** no existe o lo escribiste mal."
+			}
+		},
+		"ping": {
+			"title": "Resultado de Latencia ...",
+			"messages": "Mensajes",
+			"database": "Base de Datos",
+			"websocket": "WebSocket"
+		},
+		"legal": {
+			"privacy": {
+				"point_one": {
+					"title": "<:TheCubeTeam:924763912992329821> **__Política de Privacidad__**",
+					"description": ">>> El propósito de Cubed no es solo divertirte o entretenerte, Cubed busca llevar a tu comunidad al siguiente nivel mediante la información recopilada a lo largo de su uso, debido a ello se presentara una lista de las cosas que queremos aclarar, de esa forma buscamos que estés cómodo con la información que se recopila a través de Cubed, recuerda que una vez Cubed se encuentre dentro del servidor la Politica de Privacidad empezara a regir."
+				},
+				"point_two": {
+					"title": "<a:Arrow:933834822739193897> **Datos Almacenados**",
+					"description": ">>> Algunos de los comandos, cuando se ejecutan, requieren cierta información. Por lo tanto, el Usuario deberá proporcionar la información requerida para que Cubed continúe con la ejecución de dicho comando, para ello Cubed obtendría la información del Servidor como: **Nombre del Servidor**, **Id. del Servidor**, **Id. del Canal**, y también Cubed puede obtener la siguiente información: **Propietario del servidor**, **Id. del propietario del servidor**, **Id. de miembros**."
+				},
+				"point_three": {
+					"title": "<a:Arrow:933834822739193897> **Contenido de los Mensajes**",
+					"description": ">>> Cubed no almacena mensajes en su **Base de Datos** u otro sitio externo, en cambio, Cubed podra acceder al contenido del mensaje y debido a esto, se da la posibilidad de poder Moderar tu servidor así mismo ten encuenta que Cubed solo llega a almacenar en cache **Mensajes Eliminados** y **Mensajes Editados** durante 1 hora."
+				},
+				"point_four": {
+					"title": "",
+					"description": ""
+				}
+			}
+		}
+	},
+	"command_execute": {
+		"maintenance": {
+			"bot": {
+				"title": "Oops! Estoy en Mantenimiento!",
+				"description": "Actualmente estoy en **Mantenimiento**, este comando y todas mis funciones estan deshabilitadas.\nIntenta usarme otra vez el <t:{{timestamp}}:F>."
+			},
+			"command": {
+				"title": "Oops! Comando en Mantenimiento!",
+				"description": "Actualmente el comando **{{command}}** esta en **Mantenimiento**.\nIntenta ejecutar el comando otra vez el <t:{{timestamp}}:F>."
+			}
+		},
+		"dev": {
+			"title": "Oops! Comando prohibido!",
+			"description": "Solo mi desarrollador puede llegar a usar este comando, no tu ..."
+		},
+		"blacklisted": {
+			"title": "Oops! Haz sido un niño malo!",
+			"description": "Actualmente estas en la lista negra, si es un error contacta a mi [Desarrollador](https://discord.com/users/417042588969992203)!"
+		},
+		"premium": {
+			"title": "Oops! Comando prohibido!",
+			"description": "Este comando solo puede ser usado por **Usuarios Premiums**, unete a mi [Servidor](https://discord.gg/VErwgMgXZx) para tener suerte de conseguirlo!"
+		},
+		"permission": {
+			"bot": {
+				"title": "Oops! Tengo insufientes permisos!",
+				"description_one": "Requiero el siguiente permiso `{{permissions}}` para ejecutar el comando!",
+				"description_two": "Requiero los siguientes permisos `{{permissions}}` para ejecutar el comando!"
+			},
+			"author": {
+				"title": "Oops! Tienes insufientes permisos!",
+				"description_one": "Requieres el siguiente permiso `{{permissions}}` para ejecutar el comando!",
+				"description_two": "Requieres los siguientes permisos `{{permissions}}` para ejecutar el comando!"
+			}
+		},
+		"cooldown": {
+			"title": "Oops! Este comando esta hirviendo!",
+			"description": "Mas calma velocista! Espera {{timestamp}} para volver a ejecutar el comando!"
+		}
+	},
+	"command": {
+		"setlanguage": {
+			"language_error": {
+				"title": "Oops! Ese lenguaje ya esta seleccionado!",
+				"description": "El lenguaje **`{{language}}`** ya ha sido puesto con anterioridad."
+			},
+			"language_success": {
+				"title": "El lenguaje ha sido actualizado!",
+				"description": "El lenguaje **`{{language}}`** ha sido puesto."
+			}
+		},
+		"screenshot": {
+			"footer": "Captura de pantalla pedida por: {{member}}",
+			"error": {
+				"title": "Oops! Url no valido!",
+				"description": "El Url que me has brindado es invalido o lo escribiste mal!"
+			}
+		}
+	}
+}

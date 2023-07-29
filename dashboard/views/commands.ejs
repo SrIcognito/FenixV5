@@ -1,0 +1,87 @@
+<%- include("partials/header", { bot, user, path, title: "RedFenix" }) %>
+
+  <!-- NOTES -->
+  <div class='notes card' style="margin-top: 60px;">
+    <div class='container full grid'>
+      <div class='commandPrefix'>
+        <h2>COMANDOS SLASH-COMMANDS</h2>
+        <div class='flex'>
+          <p>
+            Por Defecto: <code>/</code><br>
+            Ejemplos: <code>/help</code> - <code>/commands</code>
+          </p>
+        </div>
+      </div>
+      <div class='commandSyntax'>
+        <h2>SINTAXIS DE LOS COMANDOS</h2>
+        <div class='flex'>
+          <p><code>[]</code> - Parametro Opcional.<br> <code>&lt;&gt;</code> - Parametro Requerido.<br>
+            <code>&lt;Opcion1 | Opcion2&gt;</code> - Seleciona una de las opciones.<br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr style="margin-left: 100px; margin-right: 100px;">
+  <!-- Commands -->
+  <div class='category'>
+    <div class='container full accordion'>
+      <% for(const [Category, Value] of Object.entries(Commands)) { %>
+        <div class='card commands'>
+          <div id='<%- Category %>Container'>
+            <input type='checkbox' id='<%- Category %>' class='accordion_input'>
+            <label style="user-select: none;" for='<%- Category %>' class='accordion_label -category'><i
+                style="color: rgb(92, 90, 90);" class="fas fa-th-list"></i>
+              Categoria de <b>
+                <%= Category %>
+              </b>
+            </label>
+            <% for(let Info in Value['commands']) { %>
+              <div class='content accordion'>
+                <div class='card'>
+                  <input type='checkbox' id='<%- Value['commands'][Info]['name'] %>' class='accordion_input'></input>
+                  <label style="user-select: none; margin-top: 8px;" for='<%- Value['commands'][Info]['name'] %>'
+                    class='accordion_label -command'><i style="border-radius: 15%; padding: 5px; background: #202024; color: rgb(92, 90, 90);" class="fas fa-terminal"></i>&nbsp;
+                    /<%= Value['commands'][Info]['name'] %> - <%= Value['commands'][Info]['description'] %></label>
+                  <div class='content'>
+                    <div class="row">
+                      <div class="col-sm-5 mb-right">
+                        <div class='usage'>
+                          <div class="px-2 px-md-4">
+                            <div class="mb-3">
+                              <div class="d-block sub-title">Tiempo Para Enfriarse:</div>
+                              <div class="description" style="user-select: none;"><%= Value['commands'][Info]['cooldown'] ? Value['commands'][Info]['cooldown'] : 'No requiere tiempo de espera.' %></div>
+                            </div>
+                            <div class="mb-3">
+                              <div class="d-block sub-title">Mantenimiento:</div>
+                              <div class="description" style="user-select: none;"><%= Value['commands'][Info]['maintenance'] ? 'Esta Habilitado.' : 'No Esta Habilitado.' %></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 mb-right">
+                        <div class='usage'>
+                          <div class="px-2 px-md-4">
+                            <div class="mb-3">
+                              <div class="d-block sub-title">Permisos Requeridos Por RedFenix:</div>
+                              <code><%= Value['commands'][Info]['botPermission'] ? Value['commands'][Info]['botPermission'] : 'No requiere ningun permiso.' %></code>
+                            </div>
+                            <div class="mb-3">
+                              <div class="d-block sub-title">Permisos Requeridos Por El Miembro:</div>
+                              <code><%= Value['commands'][Info]['authorPermission'] ? Value['commands'][Info]['authorPermission'] : 'No requiere ningun permiso.' %></code>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <% } %>
+          </div>
+        </div>
+        <% }; %>
+    </div>
+  </div>
+
+  <%- include("partials/footer") %>

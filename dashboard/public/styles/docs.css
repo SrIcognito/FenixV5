@@ -1,0 +1,106 @@
+.home__container {
+    row-gap: .5rem
+}
+
+.bd-container {
+    max-width: 1068px;
+    width: calc(100% - 3rem);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem
+}
+
+.accordion {
+    display: grid;
+    align-content: center;
+    height: 100vh
+}
+.accordion__container {
+    display: grid;
+    row-gap: .75rem;
+    padding: 2rem 1rem;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: 0 12px 32px rgba(51, 51, 51, .1)
+}
+.accordion__title {
+    font-size: 15px;
+    color: gray;
+    font-weight: 400;
+    margin-top: .15rem;
+    transition: .2s
+}
+.accordion__header {
+    display: flex;
+    column-gap: .5rem;
+    padding: 1.25rem 1.25rem 1.25rem 1rem;
+    cursor: pointer
+}
+.accordion__description {
+    padding: 0 1.25rem 1.25rem 3rem;
+    font-size: 15px;
+    color: gray
+}
+.accordion__icon {
+    font-size: 1.5rem;
+    height: max-content;
+    color: var(--text-color);
+    transition: .3s
+}
+.accordion__item {
+    box-shadow: 0 2px 6px rgba(38, 38, 38, .1);
+    background-color: rebeccapurple;
+    box-shadow: 0 2px 6px #161616;
+    border-radius: .25rem;
+    position: relative;
+    margin-bottom: 1rem;
+    transition: all .25s ease
+}
+.accordion__item::after {
+    content: '';
+    background-color: purple;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: .25rem 0 0 .25rem
+}
+.accordion__item::after {
+    content: "";
+    display: block
+}
+.accordion__item:hover {
+    background-color: var(--red);
+    background-image: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 8px 16px;
+    color: gray;
+    transform: translateY(-8px)
+}
+.accordion__content {
+    overflow: hidden;
+    height: 0;
+    transition: all .25s ease
+}
+.accordion-open .accordion__icon {
+    transform: rotate(45deg)
+}
+.accordion-open .accordion__title {
+    font-weight: 600
+}
+@media screen and (min-width:576px) {
+    .accordion__container {
+        width: 550px;
+        padding: 2.5rem;
+        justify-self: center;
+        border-radius: .75rem
+    }
+    .accordion__header {
+        padding: 1.5rem
+    }
+    .accordion__title {
+        padding-right: 3.5rem
+    }
+    .accordion__description {
+        padding: 0 4rem 1.25rem 3.5rem
+    }
+}
